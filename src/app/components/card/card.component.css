@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    border-radius: 1em;
+    border: 1px solid #d2d2d2;
+}
+
+.card {
+    width: 15em;
+    height: 20em;
+    padding: 1em;
+    position: relative;
+    background: #1a1a1a;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 236%;
+    color: #f61f00;
+    font-weight: bold;
+}
+
+.card--2 {
+    background-image: url(https://media1.giphy.com/media/RKG1c9AV8ZDKKlVikb/giphy.gif);
+}
+
+.card--3 {
+    background-image: url(https://media1.giphy.com/media/U3yJZ71Ng1xu2gZjlC/giphy.gif);
+}
+
+.card--4 {
+    background-image: url(https://media0.giphy.com/media/h4CmcxYPohgCSlERaj/giphy.gif);
+}
+
+.card--5 {
+    background-image: url(https://media2.giphy.com/media/KEk38R2yeNrTVoEdT7/giphy.gif);
+}
+
+.card--6 {
+    background-image: url(https://media3.giphy.com/media/Kd4S7JmNHo2OvWLimE/giphy.gif);
+}
+
+.card--7 {
+    background-image: url(https://media1.giphy.com/media/clnVOv1Lv9DPBRt0nF/giphy.gif);
+}
+
+.card--8 {
+    background-image: url(https://media3.giphy.com/media/YQGAu29zcpUXcLcHnd/giphy.gif);
+}
+
+.card--9 {
+    background-image: url(https://media2.giphy.com/media/cMVh6cmPjZjXqjaXEB/giphy.gif);
+}
+
+.card--10 {
+    background-image: url(https://media0.giphy.com/media/eepAuzSWcmHuabtEKW/giphy.gif);
+}
+
+.card--j {
+    background-image: url(https://media0.giphy.com/media/JSkawA6q5V68yFHeXJ/giphy.gif);
+}
+
+.card--k {
+    background-image: url(https://media2.giphy.com/media/Y2tQv8YU8or4suzcP9/giphy.gif);
+}
+
+.card--a {
+    background-image: url(https://media0.giphy.com/media/iIMJjQdGMX2gQ22Lgd/giphy.gif?cid=ecf05e474f1874159ba47a60d418af7a073c35dece625216&rid=giphy.gif);
+}
+
+[class^=card__type] {
+    font-size: 2.25em;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    line-height: 35px;
+}
+
+.card__type--top {
+    top: 0.2em;
+}
+
+.card__type--bottom {
+    bottom: 0.2em;
+    right: 0.3em;
+    transform: rotate(180deg);
+}
+
+[class^=card__type] span {
+    display: block;
+}
+
+.card--spade, .card--clubs {
+    color: white;
+}
+
+.card--spade [class^=card__type] span::before {
+    content: "\2660";
+}
+
+.card--club [class^=card__type] span::before {
+    content: "\2663";
+}
+
+.card--heart [class^=card__type] span::before {
+    content: "\2665";
+}
+
+.card--diamond [class^=card__type] span::before {
+    content: "\2666";
+}
+
+

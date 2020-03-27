@@ -17,10 +17,12 @@ import { reducers, metaReducers } from './reducers';
 import { TableModule } from './components/table/table.module';
 import { PlayerModule } from './components/player/player.module';
 import { ChatModule } from './components/chat/chat.module';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
