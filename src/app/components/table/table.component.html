@@ -1,1 +1,14 @@
-<p>table works!</p>
+<div class="table">
+    <div class="table__surface">
+        <div *ngFor="let player of players; let i = index;" class="table__player table__player--{{i + 1}}">
+            <div class="table__player-holder"></div>
+        </div>
+        <div class="table__cards">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,124 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+.table {
+    display: inline-block;
+}
+.table__surface {
+    width: 100px;
+    height: 100px;
+    background: #296843;
+    position: relative;
+    zoom: 6;
+}
+.table__surface:before {
+    content: "";
+    width: 100px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 29px solid #296843;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+}
+.table__surface:after {
+    content: "";
+    width: 100px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid #296843;
+    border-left: 29px solid #eee;
+    border-right: 29px solid #eee;
+}  
+
+.table__player {
+    position: absolute;
+    z-index: 1;
+}
+
+.table__player--1 {
+    top: 17px;
+    left: 7.53px;
+}
+
+.table__player--2 {
+    top: -6px;
+    left: 28px;
+    transform: rotate(45deg);
+}
+
+.table__player--3 {
+    top: -7.3px;
+    right: 31.5px;
+    transform: rotate(90deg);
+}
+
+.table__player--4 {
+    top: 14px;
+    right: 8.53px;
+    transform: rotate(135deg);
+}
+
+.table__player--5 {
+    top: 45px;
+    right: 7.3px;
+    transform: rotate(180deg);
+}
+
+.table__player--6 {
+    bottom: -6px;
+    right: 28.3px;
+    transform: rotate(225deg);
+}
+
+.table__player--7 {
+    left: 31.2px;
+    bottom: -7.2px;
+    transform: rotate(-90deg);
+}
+
+.table__player--8 {
+    left: 8.9px;
+    bottom: 13.8px;
+    transform: rotate(-45deg);
+}
+
+.table__player-holder:before, .table__player-holder:after {
+    content: "";
+    width: 9px;
+    height: 19px;
+    background: #2b2b2b;
+    position: relative;
+    display: block;
+    border-radius: 1px;                                    
+}
+
+.table__player-holder:before {
+    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+}
+
+.table__player-holder:after {
+    top: -6px;
+    left: -5.38px;
+}
+
+.table__cards {
+    display: grid;
+    grid-template-columns: 11px 11px 11px 11px 11px;
+    height: 17px;
+    grid-gap: 1.3px;
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    left: 20.5px;
+}
+
+.table__cards > div {
+    border: 0.5px dotted #b9b9b9;
+    border-radius: 1px;
+}

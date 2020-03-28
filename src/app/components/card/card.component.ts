@@ -89,9 +89,12 @@ export class CardComponent implements OnInit, OnChanges {
         name = "j";
         break;
       case 10:
-        name = "k";
+        name = "q";
         break;
       case 11:
+        name = "k";
+        break;
+      case 12:
         name = "a";
         break;
     }

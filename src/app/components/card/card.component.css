@@ -60,12 +60,16 @@
     background-image: url(https://media0.giphy.com/media/JSkawA6q5V68yFHeXJ/giphy.gif);
 }
 
+.card--q {
+    background-image: url(https://media1.giphy.com/media/PnCizYLwohvghmoTlp/giphy.gif);
+}   
+
 .card--k {
     background-image: url(https://media2.giphy.com/media/Y2tQv8YU8or4suzcP9/giphy.gif);
 }
 
 .card--a {
-    background-image: url(https://media0.giphy.com/media/iIMJjQdGMX2gQ22Lgd/giphy.gif?cid=ecf05e474f1874159ba47a60d418af7a073c35dece625216&rid=giphy.gif);
+    background-image: url(https://media0.giphy.com/media/iIMJjQdGMX2gQ22Lgd/giphy.gif);
 }
 
 [class^=card__type] {
