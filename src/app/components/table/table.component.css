@@ -2,22 +2,26 @@
     box-sizing: border-box;
 }
 .table {
-    display: inline-block;
+    text-align: center;
+    background: #eee;
 }
 .table__surface {
     width: 100px;
     height: 100px;
     background: #296843;
     position: relative;
-    zoom: 6;
+    zoom: 7.6;
+    /*transform: rotateX(30deg);
+    margin-top: -6px;*/
+    display: inline-block;
 }
 .table__surface:before {
     content: "";
-    width: 100px;
-    height: 0;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100px;
+    height: 0;
     border-bottom: 29px solid #296843;
     border-left: 29px solid #eee;
     border-right: 29px solid #eee;
@@ -25,10 +29,10 @@
 .table__surface:after {
     content: "";
     width: 100px;
-    height: 0;
     position: absolute;
     bottom: 0;
     left: 0;
+    height: 0;
     border-top: 29px solid #296843;
     border-left: 29px solid #eee;
     border-right: 29px solid #eee;
@@ -44,10 +48,18 @@
     left: 7.53px;
 }
 
+.table__player--1 .player {
+    transform: none;
+}
+
 .table__player--2 {
     top: -6px;
     left: 28px;
     transform: rotate(45deg);
+}
+
+.table__player--2 .player {
+    transform: rotate(-45deg);
 }
 
 .table__player--3 {
@@ -56,10 +68,18 @@
     transform: rotate(90deg);
 }
 
+.table__player--3 .player {
+    transform: rotate(-90deg);
+}
+
 .table__player--4 {
     top: 14px;
     right: 8.53px;
     transform: rotate(135deg);
+}
+
+.table__player--4 .player {
+    transform: rotate(-135deg);
 }
 
 .table__player--5 {
@@ -68,10 +88,18 @@
     transform: rotate(180deg);
 }
 
+.table__player--5 .player {
+    transform: rotate(-180deg);
+}
+
 .table__player--6 {
     bottom: -6px;
     right: 28.3px;
     transform: rotate(225deg);
+}
+
+.table__player--6 .player {
+    transform: rotate(130deg);
 }
 
 .table__player--7 {
@@ -80,10 +108,18 @@
     transform: rotate(-90deg);
 }
 
+.table__player--7 .player {
+    transform: rotate(90deg);
+}
+
 .table__player--8 {
     left: 8.9px;
     bottom: 13.8px;
     transform: rotate(-45deg);
+}
+
+.table__player--8 .player {
+    transform: rotate(45deg);
 }
 
 .table__player-holder:before, .table__player-holder:after {
@@ -119,6 +155,21 @@
 }
 
 .table__cards > div {
-    border: 0.5px dotted #b9b9b9;
+    border: 0.2px dotted #b9b9b9;
     border-radius: 1px;
+}
+
+.player {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    left: -5.67px;
+    border-radius: 100%;
+    background: #bc6969;
+    z-index: 1;
+    border: 0.3px inset rgba(255, 255, 255, 0.35);
+    background-image: url(https://media1.giphy.com/media/11QEuO6MtKCl6E/giphy.gif?cid=ecf05e4…&rid=giphy.gif);
+    background-size: cover;
+    background-position: center;
 }

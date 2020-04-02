@@ -1,13 +1,23 @@
 <div class="table">
     <div class="table__surface">
         <div *ngFor="let player of players; let i = index;" class="table__player table__player--{{i + 1}}">
-            <div class="table__player-holder"></div>
+            <div class="table__player-holder">
+                <div class="player" [style.backgroundImage]="'url(' + player.avatar + ')'"></div>
+            </div>
         </div>
         <div class="table__cards">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <app-card card_id="12" type_id="0"></app-card>
+            </div>
+            <div>
+                <app-card card_id="11" type_id="1"></app-card>
+            </div>
+            <div>
+                <app-card card_id="10" type_id="2"></app-card>
+            </div>
+            <div>
+                <app-card card_id="9" type_id="3"></app-card>
+            </div>
             <div></div>
         </div>
     </div>

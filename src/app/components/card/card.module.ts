@@ -10,6 +10,9 @@ import { CardService } from './card.service';
   ],
   providers: [
     CardService
+  ],
+  exports: [
+    CardComponent
   ]
 })
 export class CardModule { }
