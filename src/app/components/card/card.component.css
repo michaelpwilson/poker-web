@@ -9,10 +9,9 @@
     display: flex;
     border-radius: 1px;
     background: white;
-    font-family: Arial;
     border: .1px solid black;
     color: #f61f00;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 16%;
 }
 
