@@ -42,18 +42,63 @@
     flex: 1;
 }
 
-.chat__header-actions button {
+button {
     background: none;
     border: 0;
     font-size: 1em;
     padding: 1em;
     color: #707070;
-}
+}  
 
 .chat {
-    max-width: 27.5em;
+    max-width: 26em;
+    height: 100%;
+    box-shadow: -2px 6px 20px 1px #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat__body {
+    flex: 1;
+    padding: 1em;
+    padding-top: 1.5em;
+}
+
+.chat__footer {
+    height: 60px;
+    border-top: 1px solid #eee;
+    display: flex;
+}
+
+.chat__footer textarea {
+    height: 60px;
+    flex: 1;
+    box-sizing: border-box;
+    border: 0px;
+    padding: 15px;
 }
 
 .group__info {
-    font-size: 0.75em;
+    font-size: 0.55em;
+}
+
+.comment {
+    display: flex;
+}
+
+.comment__image {
+    background: #7171ff;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.comment__content {
+    flex: 1;
+    background: rgba(135, 206, 250, 0.32);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
 }

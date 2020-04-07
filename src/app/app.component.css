@@ -1,0 +1,9 @@
+.app {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.app__body {
+    flex: 1;
+}

@@ -4,13 +4,17 @@
 .table {
     text-align: center;
     background: #eee;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .table__surface {
     width: 100px;
     height: 100px;
     background: #296843;
     position: relative;
-    zoom: 7.6;
+    zoom: 6.5;
     /*transform: rotateX(30deg);
     margin-top: -6px;*/
     display: inline-block;

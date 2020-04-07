@@ -12,6 +12,7 @@ import { ChatService } from './chat.service';
   ],
   providers: [
     ChatService
-  ]
+  ],
+  exports: [ChatComponent]
 })
 export class ChatModule { }

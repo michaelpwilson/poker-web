@@ -14,6 +14,9 @@ import { CardModule } from '../card/card.module';
   ],
   providers: [
     TableService
+  ],
+  exports: [
+    TableComponent
   ]
 })
 export class TableModule { }
