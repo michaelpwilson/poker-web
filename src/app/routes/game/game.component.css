@@ -1,0 +1,9 @@
+.game {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.game__body {
+    flex: 1;
+}
