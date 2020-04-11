@@ -17,7 +17,7 @@ import { reducers, metaReducers } from './reducers';
 const routes: Routes = [
   {
     path: 'table',
-    loadChildren: () => import('./routes/game/game.module').then(m => m.GameModule)
+    loadChildren: () => import('./routes/poker/game/game.module').then(m => m.GameModule)
   }
 ];
 
