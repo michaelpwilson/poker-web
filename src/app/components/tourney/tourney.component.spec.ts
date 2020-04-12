@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TourneyComponent } from './tourney.component';
+import { SharedTourneyComponent } from './tourney.component';
 
-describe('TourneyComponent', () => {
-  let component: TourneyComponent;
-  let fixture: ComponentFixture<TourneyComponent>;
+describe('SharedTourneyComponent', () => {
+  let component: SharedTourneyComponent;
+  let fixture: ComponentFixture<SharedTourneyComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TourneyComponent ]
+      declarations: [ SharedTourneyComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TourneyComponent);
+    fixture = TestBed.createComponent(SharedTourneyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

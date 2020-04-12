@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './tourney.component.html',
   styleUrls: ['./tourney.component.css']
 })
-export class TourneyComponent implements OnInit {
+export class SharedTourneyComponent implements OnInit {
 
   constructor() { }
 

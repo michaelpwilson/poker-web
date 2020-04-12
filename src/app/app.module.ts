@@ -25,6 +25,9 @@ const routes: Routes = [
   }, {
     path: 'sit-n-go',
     loadChildren: () => import('./routes/poker/sit-n-go/sit-n-go.module').then(m => m.SitNGoModule)
+  }, {
+    path: 'tourney',
+    loadChildren: () => import('./routes/poker/tourney/tourney.module').then(m => m.TourneyModule)
   }
 ];
 

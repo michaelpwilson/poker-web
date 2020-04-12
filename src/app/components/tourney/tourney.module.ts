@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TourneyComponent } from './tourney.component';
+import { SharedTourneyComponent } from './tourney.component';
+import { TourneyService } from './tourney.service';
 
 
 
 @NgModule({
-  declarations: [TourneyComponent],
+  declarations: [SharedTourneyComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  providers: [TourneyService]
 })
-export class TourneyModule { }
+export class SharedTourneyModule { }

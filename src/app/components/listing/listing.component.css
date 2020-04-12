@@ -1,0 +1,21 @@
+.listing {
+}
+
+.listing__header {
+    display: flex;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+.listing__header-item {
+    width: 185px;
+    margin-right: 20px;
+}
+
+.listing__header .listing__header-item:last-child {
+    margin-right: 0;
+}
+
+.listing__header-item mat-form-field {
+    width: 100%;
+}
