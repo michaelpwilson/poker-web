@@ -13,11 +13,18 @@ import { StoreModule } from '@ngrx/store';
 import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
 // ngrx stuff
 import { reducers, metaReducers } from './reducers';
+import { DemoMaterialModule } from './material.module';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// lazy routes
 const routes: Routes = [
   {
     path: 'table',
     loadChildren: () => import('./routes/poker/game/game.module').then(m => m.GameModule)
+  }, {
+    path: 'sit-n-go',
+    loadChildren: () => import('./routes/poker/sit-n-go/sit-n-go.module').then(m => m.SitNGoModule)
   }
 ];
 
@@ -27,12 +34,15 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    DemoMaterialModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     StoreModule.forRoot(reducers, {
       metaReducers
     }),
     RouterModule.forRoot(routes),
-    StoreRouterConnectingModule.forRoot()
+    StoreRouterConnectingModule.forRoot(),
+
   ],
   providers: [AppService],
   bootstrap: [AppComponent]
