@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "poker"
+  "defaultProject": "poker",
+  "cli": {
+    "analytics": "007061bd-2ed7-4ca4-8456-487ca14afccb"
+  }
 }

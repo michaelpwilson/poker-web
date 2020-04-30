@@ -1,0 +1,31 @@
+<div class="app">
+  <div class="app__sidebar">
+  </div>
+  <div class="app__body">
+    <div class="app__body-nav">
+      <div class="nav">
+        <div class="nav__heading">Poker</div>
+        <div class="nav__search">
+          <mat-form-field appearance="fill">
+            <mat-label>Search</mat-label>
+            <input matInput placeholder="Type something...">
+            <mat-icon matPrefix>search</mat-icon>
+            <!--<mat-hint>Hint</mat-hint>-->
+          </mat-form-field>
+        </div>
+        <div class="nav__extra">
+          <div class="account">
+            <div class="account__image"></div>
+            <div class="account__info">
+              <div class="account__info-name">mwils666</div>
+              <div class="account__info-balance">£13.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
