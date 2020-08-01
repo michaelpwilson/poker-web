@@ -3,6 +3,24 @@
     <app-chat></app-chat>
   </div>
   <div class="game__body">
-    <app-table></app-table>
+    <div class="game__table">
+      <!-- io of player cards -->
+      <app-table [currentPlayerAction]="currentAction" (onCurrentPlayerChange)="currentAction = $event"></app-table>
+    </div>
+    <div class="game__actions" [ngClass]="{'u-folded': currentAction === 0}">
+      <div class="c-player">
+        <div *ngFor="let card of cards" class="c-player__card">
+          <app-card [card_id]="card.card_id" [type_id]="card.type.type_id"></app-card>
+        </div>
+      </div>
+      <div>
+        {{currentAction}}
+        <mat-button-toggle-group (change)="onActionChange($event)" name="What do you want to do?" aria-label="Font Style">
+          <mat-button-toggle value="0">Fold</mat-button-toggle>
+          <mat-button-toggle value="1">Check</mat-button-toggle>
+          <mat-button-toggle value="2">Raise</mat-button-toggle>
+        </mat-button-toggle-group>  
+      </div>
+    </div>
   </div>
 </div>

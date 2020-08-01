@@ -7,14 +7,13 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .table__surface {
     width: 100px;
     height: 100px;
     background: #296843;
     position: relative;
-    zoom: 6.5;
+    zoom: 6;
     /*transform: rotateX(30deg);
     margin-top: -6px;*/
     display: inline-block;
@@ -54,6 +53,12 @@
 
 .table__player--1 .player {
     transform: none;
+}
+
+.table__player--1 .player__deck {
+    left: 12px;
+    top: 6px;
+    transform: rotate(-55deg);
 }
 
 .table__player--2 {
@@ -149,13 +154,13 @@
 
 .table__cards {
     display: grid;
-    grid-template-columns: 11px 11px 11px 11px 11px;
-    height: 17px;
+    grid-template-columns: 10px 10px 10px 10px 10px;
+    height: 16px;
     grid-gap: 1.3px;
     position: absolute;
-    top: 40px;
+    top: 41.6px;
     text-align: center;
-    left: 20.5px;
+    left: 22.4px;
 }
 
 .table__cards > div {
@@ -176,4 +181,123 @@
     background-image: url(https://media1.giphy.com/media/11QEuO6MtKCl6E/giphy.gif?cid=ecf05e4…&rid=giphy.gif);
     background-size: cover;
     background-position: center;
+    transition: all 1s linear;
+}
+
+.player__deck {
+    width: 5px;
+    height: 7px;
+    border: 0.3px dotted #b9b9b9;
+    border-radius: 1px;
+    position: absolute;
+}
+
+.card--back {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/54/Card_back_06.svg);
+    height: 100%;
+    width: 100%;
+    background-size: 5px 7px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.table__player.table__player--2 .player__deck {
+    transform: rotate(-25deg);
+    top: 11.5px;
+    right: -1.5px;
+}
+
+.table__player.table__player--3 .player__deck {
+    transform: rotate(40deg);
+    top: 11px;
+    left: -2px;
+}
+
+.table__player.table__player--4 .player__deck {
+    transform: rotate(45deg);
+    left: -8px;
+    top: 6px;
+}
+
+.table__player.table__player--5 .player__deck {
+    transform: rotate(-55deg);
+    left: -8px;
+    top: -3px;
+}
+
+.table__player.table__player--6 .player__deck {
+    transform: rotate(-15deg);
+    left: -1px;
+    top: -9px;
+}
+
+.table__player.table__player--7 .player__deck {
+    transform: rotate(20deg);
+    left: 6px;
+    top: -9px;
+}
+
+.table__player.table__player--8 .player__deck {
+    transform: rotate(53deg);
+    left: 12px;
+    top: -4px;
+}
+
+.table__dealer {
+    position: absolute;
+    background-color: white;
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    top: 44px;
+    left: 15px;
+    z-index: 1;
+    transition: all 1s linear;
+}
+
+.table__player.u-current-position .player {
+    height: 12px;
+    width: 12px;
+    top: 10px;
+}
+
+.table__dealer.table__dealer--2 {
+    top: 23px;
+    left: 26px;
+}
+
+.table__dealer.table__dealer--3 {
+    top: 15px;
+    left: 51px;
+}
+
+.table__dealer.table__dealer--4 {
+    top: 26px;
+    margin: 0 auto;
+    right: -31px;
+}
+
+.table__dealer.table__dealer--5 {
+    top: 49px;
+    margin: 0 auto;
+    right: -45px;
+}
+
+.table__dealer.table__dealer--6 {
+    top: 71px;
+    margin: 0 auto;
+    right: -25px;
+}
+
+.table__dealer.table__dealer--7 {
+    margin: 0 auto;
+    right: 18px;
+    top: 77px;
+}
+
+.table__dealer.table__dealer--8 {
+    margin: 0 auto;
+    left: 24px;
+    top: 69px;
 }

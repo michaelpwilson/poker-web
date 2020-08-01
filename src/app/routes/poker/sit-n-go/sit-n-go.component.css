@@ -1,0 +1,61 @@
+.grid {
+    display: flex;
+    padding: 23px;
+}
+
+.grid__item {
+    flex: 1;
+    padding-right: 1.5em;
+}
+
+.grid__item:last-child {
+    padding-right: 0;
+}
+
+.card--block {
+    width: 100%;
+    height: 230px;
+    background: white;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card--block .card__image {
+    background-color: black;
+    flex: 1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding: 1em;
+}
+
+.card--block .h-champions-league-image {
+    background-color: #011653;
+    background-image: url(https://www.thesportsdb.com/images/media/league/badge/dtp1dl1534767233.png);
+}
+
+.card--block .h-ufc-image {
+    background-color: #000000;
+    background-image: url(https://cdn.mmaweekly.com/wp-content/uploads/2016/04/UFC-2015-Revised-Logo-on-Red-750.png);
+}
+
+.card__content {
+    flex: 0.5;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+.card__button {
+    color: blue;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: right;
+    padding: 1em 1.25em;
+}
+
+.c-spin-n-go .grid {
+    padding: 0;
+}

@@ -12,3 +12,25 @@ body, textarea {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/*
+fix this
+*/
+.c-player__card app-card .card {
+    font-size: 2em;
+    line-height: 0.9em;
+    padding: 10px 8px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(121, 121, 121, 0.32);
+}
+
+.c-player .c-player__card:last-child {
+    margin-left: .6em;
+}
+
+.c-player .card__image {
+    background-size: 299%!important;
+    margin-left: 8px;
+}

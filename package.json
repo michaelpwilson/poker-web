@@ -27,6 +27,7 @@
     "@ngrx/store": "^9.0.0",
     "@storybook/addon-actions": "^5.3.17",
     "@storybook/addon-knobs": "^5.3.17",
+    "ngx-socket-io": "^3.0.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

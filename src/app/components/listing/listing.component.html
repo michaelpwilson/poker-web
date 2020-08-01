@@ -27,13 +27,15 @@
     </div>
     <div class="listing__body">
         <mat-nav-list>
-            <mat-list-item *ngFor="let message of messages">
-              <img matListAvatar src="https://lh3.googleusercontent.com/proxy/VDJAVE5UyBw8alFe8fteUcNwnPNY8YNSSsaEy4NYLw-uOdIOXvgcDg-odirc3p7jzi6cXpRIrsb_juAZDFBjKVwGTdetsgIOrVai1Jjwi3VBRalr" alt="...">
-              <h3 matLine> {{message.from}} </h3>
-              <p matLine>
-                <span> {{message.subject}} </span>
-                <span class="demo-2"> -- {{message.content}} </span>
-              </p>
+            <mat-list-item *ngFor="let message of messages" [routerLink]="['/table']">  
+              <img matListAvatar src="/assets/logos/arsenal.png" alt="...">
+              <div class="c-list-item">
+                <h3 matLine>Hyper: Big Premier £222 NL Hold'em</h3>
+                <p matLine>684/990 Enrolled</p>
+              </div>
+              <div>
+                <mat-icon>chevron_right</mat-icon>
+              </div>
             </mat-list-item>
         </mat-nav-list>
     </div>

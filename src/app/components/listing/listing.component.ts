@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listing',
@@ -9,13 +10,9 @@ import { FormControl } from '@angular/forms';
 export class ListingComponent implements OnInit {
   toppings = new FormControl();
   toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
-  messages: any = [{
-    from: "michael",
-    subject: "Whats up?",
-    content: "i dunno what goes here"
-  }];
+  messages: any = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }

@@ -1,24 +1,31 @@
+<div style="display: flex; position: absolute; z-index: 1; top: 0; right: 0;">
+    <button (click)="nextPlayer()">next player</button>
+    <button (click)="nextCardDeck()">next deck</button>
+    <button (click)="restart()">restart</button>
+
+</div>
 <div class="table">
     <div class="table__surface">
-        <div *ngFor="let player of players; let i = index;" class="table__player table__player--{{i + 1}}">
+        <div class="table__dealer table__dealer--{{currentPlayerPosition}}"></div> 
+
+        <div 
+            *ngFor="let player of players; let i = index;" 
+            class="table__player table__player--{{i + 1}}"
+            [ngClass]="{'u-current-position': currentPlayerPosition === i + 1}">
             <div class="table__player-holder">
-                <div class="player" [style.backgroundImage]="'url(' + player.avatar + ')'"></div>
+                <div class="player" [style.backgroundImage]="'url(' + player.avatar + ')'">
+                    <div class="player__deck">
+                        <div class="card--back"></div>
+                        <div style="font-size: 2px; width: 22px;" *ngFor="let card of player.cards">{{card.name}} {{card.type.id}}</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="table__cards">
-            <div>
-                <app-card card_id="12" type_id="0"></app-card>
+            <div *ngFor="let card of tableDeckCards">
+                <app-card [card_id]="card.card_id" [type_id]="card.type.type_id"></app-card>
             </div>
-            <div>
-                <app-card card_id="11" type_id="1"></app-card>
-            </div>
-            <div>
-                <app-card card_id="10" type_id="2"></app-card>
-            </div>
-            <div>
-                <app-card card_id="9" type_id="3"></app-card>
-            </div>
-            <div></div>
         </div>
     </div>
 </div>
+

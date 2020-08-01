@@ -6,4 +6,34 @@
 
 .game__body {
     flex: 1;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0;
+    background: #eee;
+    display: flex;
+}
+
+.game__table {
+    flex: 1;
+}
+
+.game__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 0.5;
+}
+
+.c-player {
+    display: flex;
+
+}
+
+.c-player__card {
+    flex: 1;
+    height: 211px;
+}
+
+.game__actions.u-folded {
+    opacity: 0.4;
 }

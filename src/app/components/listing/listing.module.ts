@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DemoMaterialModule } from 'src/app/material.module';
 import { MatListModule } from '@angular/material/list';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [ListingComponent],
@@ -13,7 +14,8 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     ReactiveFormsModule,
     DemoMaterialModule,
-    MatListModule
+    MatListModule,
+    RouterModule
   ],
   providers: [ListingService],
   exports: [ListingComponent]

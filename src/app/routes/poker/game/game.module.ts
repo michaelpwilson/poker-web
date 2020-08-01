@@ -9,6 +9,9 @@ import { TableModule } from '../../../components/table/table.module';
 import { PlayerModule } from '../../../components/player/player.module';
 import { ChatModule } from '../../../components/chat/chat.module';
 import { Routes, RouterModule } from '@angular/router';
+import { CardModule } from '../../../components/card/card.module';
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 const routes: Routes = [
   {
@@ -24,8 +27,10 @@ const routes: Routes = [
   imports: [
     CommonModule,
     TableModule,
+    CardModule,
     PlayerModule,
     ChatModule,
+    MatButtonToggleModule,
     RouterModule.forChild(routes)
   ],
   providers: [GameService]
